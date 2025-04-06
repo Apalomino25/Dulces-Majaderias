@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.contenedor-header {
+    background-color: #e6acb6;
+}
+
 .contenedor-dirección {
     background-color:#FFF0F5;
     text-align: center;
@@ -23,11 +27,14 @@
 .contenedor-logo {
     /* border: 1px solid red; */
     text-align: center;
+  
 }
 
 .contenedor-slogan{
     text-align: center;
-    font-size: 26px;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
 }
 
 .contenedor_centro_logo {
@@ -41,31 +48,38 @@
 }
 
 .contenedor-botones {
-   /*  border: 2px solid black; */
+    /* border: 2px solid black; */
     display: inline-flex;
-    font-size:20px;
+    font-size:25px;
     font-weight: bolder;
-    gap: 5px;
+    gap: 15px;
 }
 
 .contenedor-boton {
-    /* border-bottom: 5px solid black; */
+    border: 5px solid #fff;
     list-style: none;
     padding: 5px 5px;
+
 }
 
 .contenedor-boton a{
     text-decoration: none;
-    
   }
 
 a:visited, a:active {
-    color:hsl(312, 92%, 49%);;
+    color:#e6acb6;
 }
 
+.contenedor-boton a:hover{
+    color:#e85d75;
+  }
 
 .contenedor-boton:hover {
     border-bottom: 5px solid hsl(341, 91%, 49%);
     color: #fff;
 }
 
+
+.Portada {
+    width: 100% ;
+}

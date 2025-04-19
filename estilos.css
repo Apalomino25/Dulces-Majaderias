@@ -153,4 +153,36 @@ a:visited, a:active {
     font-style: normal;
 } 
 
+.contenedor-fila1 {
+    border: 1px solid green;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px ;
+}
 
+
+
+.producto {
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+}
+
+
+.contenedor-footer {
+    background-color: #f1948a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    height: 200px;
+}
+
+.column {
+    width: 30%;
+  
+}

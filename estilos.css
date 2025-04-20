@@ -153,19 +153,30 @@ a:visited, a:active {
     font-style: normal;
 } 
 
-.contenedor-fila1 {
-    border: 1px solid green;
+.contenedor-productos {
+    border: 1px solid red;
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px ;
 }
 
 
 
+.contenedor-fila1 {
+    /* border: 1px solid green; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px ;
+    
+}
+
+.producto img {
+    height: 470px;
+    width: 470px;
+}
+
 .producto {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 500px;
     width: 500px;
 }
@@ -183,7 +194,6 @@ a:visited, a:active {
     font-size: 22px;
 }
 
-.column {
+/* .column {
     width: 30%;
-  
-}
+} */

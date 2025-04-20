@@ -180,6 +180,7 @@ a:visited, a:active {
     text-align: center;
     gap: 30px;
     height: 200px;
+    font-size: 22px;
 }
 
 .column {

@@ -222,6 +222,8 @@ a:visited, a:active {
 
 .column {
     width: 30%;
+    /* border: 1px solid red; */
+    height: 180px;
 }
 
 a{

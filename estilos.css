@@ -7,59 +7,68 @@ body   {
     background-color: #FDEBD0;
 }
 
-
-
+/* ---------- COMIENZA HEADER ----------*/
 
 .contenedor-header {
     background-color: #FDEBD0;
+    border: 1px solid rgb(13, 240, 100);
+    width: 100%;
+    /* display: flex; */
 }
+
+/* contenedor secundario*/
 
 .contenedor-redes-direccion {
     width: 100%;
     display: flex;
+    flex-direction: column;
     background-color: #f1948a;
 }
 
+
+
+/* contenedores terciarios */
+
+/* estilo de el texto */ 
+.texto {
+    color: white;
+    font-size: 1em;
+}
+
+/* iconos */
+i { 
+    font-size: 1em;
+    color: red;
+}
+
 .contenedor-redes {
-    width: 30%;
-    /* background-color:#FFF0F5 */;
-    font-size:xx-large;
-    /* border: 1px solid red; */
+    width: 100%;
+    border: 1px solid red;
     text-align: left;
     padding:10px 50px;
 }
 
-.name_redes {
-    color: #fff;
-    margin-left: 15px;
-    font-size: 24px;   
-}
-
-.name_horario {
-    color:white;
-    font-size: 22px;
-}
-
-i {
-    color: rgb(231, 33, 33);
-}
-
 .contenedor-direccion {
-    width: 30%;
-    /* border: 1px solid purple; */
-    font-size:xx-large;
-    text-align: left;
-    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid purple;
+    text-align: center;
+    font-size: 1em;
+    /* padding: 5px 10px; */
 }
 
 .contenedor-horario {
-    width: 30%;
-    font-size:xx-large;
-    text-align: right;
+    border: 1px solid green;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
 }
 
 
+ /* estilos contenedor nombre de la empresa */ 
+
 .contenedor-nombempresa {
+
+    width: 100%;
     font-size: 50px;
     text-align: center;
     font-family: "Parisienne";
@@ -68,11 +77,14 @@ i {
     color: #020202;
 }
 
+/* estilos contenedor logo */
+
 .contenedor-logo {
     /* border: 1px solid red; */
     text-align: center;
-  
 }
+
+/* estilos contenedor slogan */
 
 .contenedor-slogan{
     text-align: center;
@@ -81,25 +93,40 @@ i {
     font-weight: 700;
 }
 
-.contenedor_centro_logo {
-   /*  border: 1px solid red; */
-}
+/* estilo para las redes sociales */
 
-.navegacion {
+
+
+/* iconos de redes sociales */
+
+/* i {
+    color: rgb(231, 33, 33);
+} */
+
+
+/* estilo para el horario */
+
+
+/* --------   FINALIZA HEADER --------------------*/ 
+
+/* --------   INICIA EL NAV --------------------*/ 
+
+.contenedor-nav {
+    width: 100%;
     text-align: center;
-    /* border: 1px solid green; */
-
+    border: 1px solid rgb(128, 36, 0);
 }
+
+/* contenedor de los botones  */
 
 .contenedor-botones {
-    /* border: 2px solid black; */
-    display: inline-flex;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     font-size:25px;
     font-weight: bolder;
-    gap: 80px;
     background-color: #FDEBD0;
-   
-
 }
 
 .contenedor-boton {
@@ -108,12 +135,11 @@ i {
     padding: 5px 5px;
     background-color: #f1948a;
     border-radius: 10px;
-
 }
 
 .contenedor-boton a{
     text-decoration: none;
-  }
+}
 
 a:visited, a:active {
     color:#fff;
@@ -121,24 +147,30 @@ a:visited, a:active {
 
 .contenedor-boton a:hover{
     color:#f1948a;
-  } 
-
+} 
  
 .contenedor-boton:hover {
    background-color: #fff;
 }  
 
 
-.Portada {
-    /* border: 1px solid red; */
+/* --------   FINALIZA EL NAV --------------------*/ 
+
+/* --------   INCIA LA PORTADA --------------------*/ 
+
+
+.contenedor-portada {
+    border: 1px solid red;
     width: 100% ;
     height: 700px;
     /* opacity: 0.8; */
-    /* border: 1px solid red; */
 }
 
+/* --------   FINALIZA LA PORTADA --------------------*/ 
 
-.slogan_text {
+/* --------   INCIA EL SLOGAN --------------------*/ 
+
+.contenedor-slogan_text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +178,7 @@ a:visited, a:active {
     height: 300px;
     text-align: center;
     vertical-align: center;
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
     /* añadido por sara */
     font-family: "Special Gothic Expanded One", sans-serif;
     font-size: 30px;
@@ -154,32 +186,36 @@ a:visited, a:active {
     font-style: normal;
 } 
 
+/* -------- FINALIZA EL SLOGAN --------------------*/ 
+
+/* --------   INICIAN LOS PRODUCTOS --------------------*/ 
+
 .contenedor-productos {
-    /* border: 1px solid red; */
+    width: 100%;
+    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-
 .contenedor-fila1 {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
+    width: 100%;
     display: flex;
-    padding: 10px;
-    gap: 30px ;
-    ;
+    flex-direction:column ;
+    /* padding: 10px; */
+    /* gap: 30px  */
 }
 
 .producto img {
-    height: 600PX;
-    width: 420px;
+    width: 100%;
 }
 
 .producto {
     /* border: 1px solid red; */
-    height: 600px;
-    width: 420px;
+    height: auto;
+    width: 100%;
     position: relative;
 }
 
@@ -193,7 +229,6 @@ a:visited, a:active {
     font-family: "Amaranth", sans-serif;
     color: white;
     font-size: 55px;
-    
 }
 
 .producto:hover {
@@ -207,23 +242,39 @@ a:visited, a:active {
     color: #FDEBD0;
 }
 
+/* --------   FINALIZA LOS PRODUCTOS --------------------*/
+
+.contenedor-slogan_text {
+    text-align: center;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+/* --------   INICIA FOOTER --------------------*/
+
 
 .contenedor-footer {
     background-color: #f1948a;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 30px;
+    /* gap: 30px; */
     height: 200px;
-    font-size: 22px;
+    font-size: 1em;
+    border: 1px solid yellow;
 }
 
 .column {
-    width: 30%;
+   /*  width: 100%; */
     /* border: 1px solid red; */
-    height: 180px;
 }
 
 a{
@@ -234,3 +285,5 @@ a{
 .politica a:visited, a:active {
     color:#000000;
 }
+
+/* --------   FINALIZA  EL FOOTER --------------------*/

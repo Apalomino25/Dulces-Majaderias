@@ -1,66 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
 }
 
 body   {
     background-color: #FDEBD0;
 }
 
-
-
+/* ---------- COMIENZA HEADER ----------*/
 
 .contenedor-header {
     background-color: #FDEBD0;
+    border: 1px solid rgb(13, 240, 100);
+    width: 100%;
+    /* display: flex; */
 }
+
+/* contenedor secundario*/
 
 .contenedor-redes-direccion {
     width: 100%;
     display: flex;
+    flex-direction: column;
     background-color: #f1948a;
 }
 
+
+/* contenedores terciarios */
+
+/* estilo de el texto */ 
+.texto {
+    color: white;
+    font-size: 1.3em;
+}
+
+/* iconos */
+i { 
+    font-size: 1.3em;
+    color: red;
+}
+
 .contenedor-redes {
-    width: 30%;
-    /* background-color:#FFF0F5 */;
-    font-size:xx-large;
-    /* border: 1px solid red; */
-    text-align: left;
-    padding:10px 50px;
-}
-
-.name_redes {
-    color: #fff;
-    margin-left: 15px;
-    font-size: 24px;   
-}
-
-.name_horario {
-    color:white;
-    font-size: 22px;
-}
-
-i {
-    color: rgb(231, 33, 33);
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    /* padding:10px 50px; */
 }
 
 .contenedor-direccion {
-    width: 30%;
-    /* border: 1px solid purple; */
-    font-size:xx-large;
-    text-align: left;
-    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid purple;
+    text-align: center;
+    font-size: 1em;
+    /* padding: 5px 10px; */
 }
 
 .contenedor-horario {
-    width: 30%;
-    font-size:xx-large;
-    text-align: right;
+    border: 1px solid green;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
 }
 
 
+ /* estilos contenedor nombre de la empresa */ 
+
 .contenedor-nombempresa {
-    font-size: 50px;
+
+    width: 100%;
+    font-size: 2.3em;
     text-align: center;
     font-family: "Parisienne";
     font-weight: 700;
@@ -68,52 +77,70 @@ i {
     color: #020202;
 }
 
+/* estilos contenedor logo */
+
 .contenedor-logo {
     /* border: 1px solid red; */
     text-align: center;
-  
 }
+
+.img-logo-principal {
+    width: 15em;
+    height: auto;
+}
+
+/* estilos contenedor slogan */
 
 .contenedor-slogan{
     text-align: center;
-    font-size: 32px;
+    font-size: 2em;
     color: #000000;
     font-weight: 700;
 }
 
-.contenedor_centro_logo {
-   /*  border: 1px solid red; */
-}
+/* estilo para las redes sociales */
 
-.navegacion {
+/* estilo para el horario */
+
+
+/* --------   FINALIZA HEADER --------------------*/ 
+
+/* --------   INICIA EL NAV --------------------*/ 
+
+.contenedor-nav {
+    width: 100%;
     text-align: center;
-    /* border: 1px solid green; */
-
+    border: 1px solid rgb(128, 36, 0);
 }
+
+/* contenedor de los botones  */
 
 .contenedor-botones {
-    /* border: 2px solid black; */
-    display: inline-flex;
-    font-size:25px;
+    width:  100%;
+    border: 1px solid black;
+    display: flex;
+    gap:0.1em;
+    flex-direction: column;
+    font-size:1.5em;
     font-weight: bolder;
-    gap: 80px;
     background-color: #FDEBD0;
-   
-
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-boton {
+    width: 100%;
     border: 5px solid #f1948a;
     list-style: none;
     padding: 5px 5px;
     background-color: #f1948a;
     border-radius: 10px;
-
+    font-size: 0.8em;
 }
 
 .contenedor-boton a{
     text-decoration: none;
-  }
+}
 
 a:visited, a:active {
     color:#fff;
@@ -121,36 +148,354 @@ a:visited, a:active {
 
 .contenedor-boton a:hover{
     color:#f1948a;
-  } 
-
+} 
  
 .contenedor-boton:hover {
    background-color: #fff;
 }  
 
 
-.Portada {
-    /* border: 1px solid red; */
+/* --------   FINALIZA EL NAV --------------------*/ 
+
+/* --------   INCIA LA PORTADA --------------------*/ 
+
+
+.contenedor-portada {
+    border: 1px solid red;
     width: 100% ;
-    height: 500px;
-    opacity: 0.8;
-    /* border: 1px solid red; */
+    height: 700px;
+    /* opacity: 0.8; */
 }
 
+/* --------   FINALIZA LA PORTADA --------------------*/ 
 
-.slogan_text {
+/* --------   INCIA EL SLOGAN --------------------*/ 
+
+.contenedor-slogan_text {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
-    font-size: 50px;
+    font-weight: 700;
     text-align: center;
     vertical-align: center;
     border: 1px solid purple;
-    font-family: "Special+Gothic+Expanded+One";
+    /* añadido por sara */
+    font-family: "Parisienne";
+    font-size: 2.5em;
     font-optical-sizing: auto;
     font-style: normal;
 } 
 
+/* -------- FINALIZA EL SLOGAN --------------------*/ 
 
+/* --------   INICIAN LOS PRODUCTOS --------------------*/ 
+
+.contenedor-productos {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor-fila1 {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    /* padding: 10px; */
+    /* gap: 30px  */
+}
+
+.producto img {
+    width: 100%;
+}
+
+.producto {
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.texto-producto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    vertical-align: center;
+    font-family: "Amaranth", sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+.producto:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    
+}
+
+.texto-producto:hover {
+    transition: color 0.5s ease;
+    color: #FDEBD0;
+}
+
+/* --------   FINALIZA LOS PRODUCTOS --------------------*/
+
+.contenedor-slogan_text {
+    text-align: center;
+    border: 1px solid red;
+}
+
+/* --------   INICIA FOOTER --------------------*/
+
+
+.contenedor-footer {
+    background-color: #f1948a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* gap: 30px; */
+    /* height: 200px; */
+    font-size: 1.3em;
+    border: 1px solid yellow;
+}
+
+
+.img-logo{
+    width: 7em;
+    height: auto;
+}
+
+.img-libreclamaciones {
+    width: 7em;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.politica a:visited, a:active {
+    color:#000000;
+}
+
+/* --------   FINALIZA  EL FOOTER --------------------*/
+
+
+@media (min-width:768px){
+
+.contenedor-header {
+    width: 100%;
+  }
+
+.contenedor-redes-direccion{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+}
+   
+.contenedor-redes {
+    width: 33.33%;
+}
+
+.contenedor-direccion {
+    width: 33.33%;
+}
+
+.contenedor-horario {
+    width: 33.33%;
+}
+
+/* .texto {
+    font-size: 4em;
+} */
+
+/* estilos nav */
+
+.contenedor-nav {
+    width: 100%;
+    border: 1px solid rgb(30, 15, 236);
+} 
+
+.contenedor-botones {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid rgb(17, 16, 16);
+}
+
+
+.contenedor-boton {
+    width: 100%;
+    border: 1px solid rgb(224, 236, 9);
+}
+
+/* contenedor productos */
+
+.contenedor-productos {
+    width: 100%;
+    display: flex;
+}
+
+.contenedor-fila1 {
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.producto {
+    border: 1px solid red;
+    /* height: auto; */
+    width: 100%;
+    position: relative;
+}
+
+
+/* contenedor footer */
+
+.contenedor-footer {
+    border: 1px solid rgb(240, 8, 209);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+.contenedor-footer-fila1 {
+    border: 1px solid red;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.contenedor-footer-fila2 {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    width: 50%;
+    border: 1px solid yellow;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+
+}
+
+@media (min-width:1024px){ 
+
+    .contenedor-header {
+        width: 100%;
+    }
+    
+    .contenedor-redes-direccion{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        padding: 10px;
+    }
+       
+    .contenedor-redes {
+        width: 33.33%;
+    }
+    
+    .contenedor-direccion {
+        width: 33.33%;
+    }
+    
+    .contenedor-horario {
+        width: 33.33%;
+    }
+    
+    /* .texto {
+        font-size: 4em;
+    } */
+    
+    /* estilos nav */
+    
+    .contenedor-nav {
+        width: 100%;
+        border: 1px solid rgb(30, 15, 236);
+    } 
+    
+    .contenedor-botones {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+        border: 1px solid rgb(17, 16, 16);
+    }
+    
+    
+    .contenedor-boton {
+        width: 100%;
+        border: 1px solid rgb(224, 236, 9);
+    }
+    
+    /* contenedor productos */
+    
+    .contenedor-productos {
+        width: 100%;
+        display: flex;
+    }
+    
+    .contenedor-fila1 {
+        border: 1px solid green;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+    }
+    
+    .producto {
+        border: 1px solid red;
+        /* height: auto; */
+        width: 100%;
+        position: relative;
+    }
+    
+    
+    /* contenedor footer */
+    
+    .contenedor-footer {
+        border: 1px solid rgb(240, 8, 209);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     }
+    .contenedor-footer-fila1 {
+        border: 1px solid red;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    
+    .contenedor-footer-fila2 {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .columna {
+        width: 50%;
+        border: 1px solid yellow;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    
+     }

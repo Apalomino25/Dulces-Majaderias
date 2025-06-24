@@ -116,11 +116,11 @@ i {
 /* contenedor de los botones  */
 
 .contenedor-botones {
-    width:  100%;
+    /* width:  100%; */
     /* border: 1px solid black; */
     display: flex;
     gap:0.1em;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-size:1.5em;
     font-weight: bolder;
     background-color: #FDEBD0;
@@ -426,25 +426,55 @@ a{
     
     /* estilos nav */
     
-    .contenedor-nav {
-        width: 100%;
-        /* border: 1px solid rgb(30, 15, 236); */
-    } 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fefefe;
+}
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contenedor-nav {
+  background-color: #ffe4c4;
+  padding: 10px 0;
+}
+
+.contenedor-botones {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;                  /* IMPORTANTE para horizontal */
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;               /* Se acomoda en varias líneas si es necesario */
+}
+
+.contenedor-boton a {
+  background-color: #f28c8c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contenedor-boton a:hover {
+  background-color: #d96f6f;
+}
+
+
+
+
+
     
-    .contenedor-botones {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        
-        /* border: 1px solid rgb(17, 16, 16); */
-    }
-    
-    
-    .contenedor-boton {
-        width: 100%;
-        /* border: 1px solid rgb(224, 236, 9); */
-    }
-    
+
+
+
     /* contenedor productos */
     
     .contenedor-productos {
